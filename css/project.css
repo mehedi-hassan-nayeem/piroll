@@ -1,0 +1,66 @@
+html {
+    font-size: 62.5%;
+}
+
+.main-project {
+    max-width: 120rem;
+    margin: auto;
+}
+
+.main-project {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-pro-top {
+    display: flex;
+}
+
+.main-pro-top > div:nth-child(1) {
+    flex: 50%;
+    padding: 3rem;
+}
+.main-pro-top > div:nth-child(2) {
+    flex: 50%;
+    padding: 3rem;
+}
+
+.main-pro-top > div:nth-child(1) > div:nth-child(2) {
+    margin: 5rem 0;
+}
+
+.main-pro-top span {
+    color: black;
+    font-weight: bolder;
+    margin-right: 1rem;
+    min-width: 6rem;
+    display: inline-block;
+}
+
+.main-pro-top img {
+    max-width: 100%;
+}
+
+.main-project .main-pro-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 7rem;
+    margin-top: 3rem;
+}
+
+.main-project .main-pro-bottom > div {
+    font-size: 1.4rem;
+    font-weight: bold;
+    font-family: "Nunito Sans", sans-serif;
+    text-transform: uppercase;
+}
+
+.main-project .main-pro-bottom i {
+    margin: 0 1.5rem;
+}
+
+/* footer section */
+#pro-footer {
+    margin: 0;
+}

@@ -1,0 +1,146 @@
+html {
+    font-size: 62.5%;
+}
+
+.main-home > section:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem;
+    background: #f5f5f5;
+}
+
+.main-home > section:nth-child(1) h2,
+p {
+    max-width: 60%;
+    text-align: center;
+}
+
+#home-footer {
+    margin: 0;
+}
+
+#home-header {
+    max-width: 100%;
+    padding: 0.3rem 3rem;
+}
+
+/* ----------------------------*******************************************---------------------- */
+/* ----------------------------*******************************************---------------------- */
+/* ----------------------------*******************************************---------------------- */
+/* ----------------------------*******************************************---------------------- */
+/* ----------------------------*******************************************---------------------- */
+
+.eye-1:hover {
+    background: linear-gradient(
+            to bottom,
+            rgb(33, 192, 187, 0.7),
+            rgb(33, 191, 185, 0.7)
+        ),
+        url("../images/c-1.png");
+}
+
+.eye-2:hover {
+    background: linear-gradient(
+            to bottom,
+            rgb(33, 192, 187, 0.7),
+            rgb(33, 191, 185, 0.7)
+        ),
+        url("../images/c-2.png");
+}
+
+.eye-3:hover {
+    background: linear-gradient(
+            to bottom,
+            rgb(33, 192, 187, 0.7),
+            rgb(33, 191, 185, 0.7)
+        ),
+        url("../images/c-3.png");
+}
+
+.eye-4:hover {
+    background: linear-gradient(
+            to bottom,
+            rgb(33, 192, 187, 0.7),
+            rgb(33, 191, 185, 0.7)
+        ),
+        url("../images/c-3.png");
+}
+
+.eye-5:hover {
+    background: linear-gradient(
+            to bottom,
+            rgb(33, 192, 187, 0.7),
+            rgb(33, 191, 185, 0.7)
+        ),
+        url("../images/c-5.png");
+}
+
+.eye-6:hover {
+    background: linear-gradient(
+            to bottom,
+            rgb(33, 192, 187, 0.7),
+            rgb(33, 191, 185, 0.7)
+        ),
+        url("../images/c-6.png");
+}
+
+.eye-7:hover {
+    background: linear-gradient(
+            to bottom,
+            rgb(33, 192, 187, 0.7),
+            rgb(33, 191, 185, 0.7)
+        ),
+        url("../images/c-7.png");
+}
+
+.eye-8:hover {
+    background: linear-gradient(
+            to bottom,
+            rgb(33, 192, 187, 0.7),
+            rgb(33, 191, 185, 0.7)
+        ),
+        url("../images/c-8.png");
+}
+
+.eye-9:hover {
+    background: linear-gradient(
+            to bottom,
+            rgb(33, 192, 187, 0.7),
+            rgb(33, 191, 185, 0.7)
+        ),
+        url("../images/c-9.png");
+}
+
+.eye-10:hover {
+    background: linear-gradient(
+            to bottom,
+            rgb(33, 192, 187, 0.7),
+            rgb(33, 191, 185, 0.7)
+        ),
+        url("../images/c-10.png");
+}
+
+.eye-11:hover {
+    background: linear-gradient(
+            to bottom,
+            rgb(33, 192, 187, 0.7),
+            rgb(33, 191, 185, 0.7)
+        ),
+        url("../images/c-11.png");
+}
+
+.eye-12:hover {
+    background: linear-gradient(
+            to bottom,
+            rgb(33, 192, 187, 0.7),
+            rgb(33, 191, 185, 0.7)
+        ),
+        url("../images/c-12.png");
+}
+/* **************************----------------------------------------------************************* */
+/* ----------------------------*******************************************---------------------- */
+/* ----------------------------*******************************************---------------------- */
+/* ----------------------------*******************************************---------------------- */
+/* ----------------------------*******************************************---------------------- */

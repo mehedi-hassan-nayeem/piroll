@@ -1,0 +1,139 @@
+html {
+    font-size: 62.5%;
+}
+
+/* header section */
+.about-header {
+    max-width: 120rem;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    min-height: 5rem;
+    background: white;
+}
+
+.about-header div:nth-child(1) {
+    flex: 30%;
+}
+
+.about-header div:nth-child(2) {
+    flex: 70%;
+}
+
+.about-header nav ul {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.about-header nav ul li {
+    margin: 0 1.5rem;
+}
+
+.about-header nav ul li a {
+    font-size: 1.7rem;
+    text-transform: uppercase;
+    color: #191919;
+    font-weight: bold;
+    transition: all ease-in-out 0.5s;
+}
+
+.about-header nav ul li a:hover {
+    color: #10c9c3;
+}
+
+.about-header::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+/* main section */
+
+.main-about {
+    max-width: 120rem;
+    margin: auto;
+}
+
+/* about-hero-section */
+.about-hero-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #3e3e3e;
+    padding: 7rem 0;
+}
+
+.about-hero-section > div {
+    max-width: 50%;
+    text-align: center;
+}
+
+.about-hero-section h2 {
+    font-size: 3rem;
+    color: white;
+}
+
+.about-hero-section p {
+    color: rgb(223, 227, 230);
+}
+
+/* success section */
+.success-section {
+    margin: 0rem 0;
+}
+
+/* about me section */
+
+.main-about .about-me {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+}
+
+.main-about .about-me > div {
+    flex: 50%;
+    min-height: 50vh;
+    margin: 3rem;
+}
+
+.main-about .about-me > div:nth-child(1) img {
+    width: 100%;
+}
+
+.main-about .about-me-p {
+    margin: 3rem 0;
+}
+
+.client {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 5rem 0;
+}
+
+.client > div {
+    max-width: 53%;
+}
+.client > div:nth-child(2) {
+    margin: 3rem 0;
+}
+
+.client button {
+    min-width: 17rem;
+    padding: 0.5rem 0;
+}
+
+.main-about::after {
+    content: "";
+    clear: both;
+    display: block;
+}

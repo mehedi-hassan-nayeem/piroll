@@ -1,0 +1,984 @@
+/* google font cdn */
+@import url("@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Nunito+Sans&family=Work+Sans&display=swap');");
+
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+
+/* reset and common section starts here */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-weight: 400;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+    background: #fafafa;
+}
+
+body {
+    min-height: 100vh;
+    max-width: 100%;
+    background: #fff;
+}
+
+p {
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 1.7rem;
+    line-height: 1.6;
+    margin: 2rem 0;
+    color: #787878;
+    /* ?contactform */
+    /* font-family: "Work Sans", sans-serif;       botom contact link only*/
+}
+
+nav,
+.heading,
+.btn {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+}
+
+.heading {
+    color: #1d1d1d;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.btn {
+    max-width: 15rem;
+    font-size: 1.7rem;
+    line-height: 2.7;
+    text-transform: uppercase;
+    background: #10c9c3;
+    color: white;
+    transition: all ease-in-out 0.4s;
+}
+
+.btn:hover {
+    transform: scale(0.9);
+    cursor: pointer;
+}
+
+/* reset and common section ends here */
+
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+
+/* header section stars here */
+.main-header {
+    width: 100%;
+    min-height: 100vh;
+    padding: 2% 5%;
+    background-image: url("../images/hero-img.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.main-header {
+    display: flex;
+    flex-direction: column;
+}
+
+.sticky-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    flex: 15%;
+}
+
+#menu-bar {
+    margin: 1.5rem 0;
+    display: none;
+    cursor: pointer;
+}
+
+.header-nav {
+    flex: 85%;
+}
+
+.header-nav nav ul {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header-nav nav ul li {
+    margin: 0 1.5rem;
+}
+
+.header-nav nav ul li a {
+    font-size: 1.7rem;
+    text-transform: uppercase;
+    color: #191919;
+    font-weight: bold;
+    transition: all ease-in-out 0.5s;
+}
+
+.header-nav nav ul li a:hover {
+    color: #10c9c3;
+}
+
+.hero-section {
+    flex: auto;
+    align-self: flex-end;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 40%;
+}
+
+.hero-section h1 {
+    font-size: 4rem;
+}
+
+.stickybar {
+    position: sticky;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10000;
+}
+
+.sticky-bar.sticky {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10000;
+    padding: 0.3rem 0.7rem;
+    background: #e9e9e9d0;
+    box-shadow: 0 0.2rem 0.5rem;
+}
+
+.main-header::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+/* header section ends here */
+
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+
+/* main section starts here */
+
+main {
+    width: 100%;
+}
+
+main > section {
+    padding: 2% 5%;
+}
+
+/* aobut us section */
+
+.about-us {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 50%;
+    margin: 7rem auto;
+}
+
+/* professional skills section */
+
+.professional-skills {
+    display: flex;
+    justify-content: space-between;
+    margin: 7rem auto;
+    align-items: center;
+}
+
+.professional-skills div:nth-child(1) {
+    flex: 50%;
+}
+
+.professional-skills div:nth-child(2) {
+    flex: 50%;
+}
+
+.professional-skills img {
+    width: 100%;
+}
+
+/* ============================================================================================================== */
+/* ============================================================================================================== */
+/* ============================================================================================================== */
+/* ============================================================================================================== */
+/* ============================================================================================================== */
+
+.skill-container {
+    padding-right: 10rem;
+}
+
+.skill-container li {
+    list-style-type: none;
+    font-weight: bolder;
+    margin: 3rem 0;
+    position: relative;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    letter-spacing: 0.1rem;
+}
+
+.skill-container li:not(:last-child) {
+    margin-bottom: 5rem;
+}
+
+.skill-container li::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0.5rem;
+    top: calc(100% + 1rem);
+    left: 0;
+    background: #787878;
+}
+
+.skill-container li::after {
+    position: absolute;
+    content: "";
+    width: 0%;
+    height: 0.5rem;
+    top: calc(100% + 1rem);
+    left: 0;
+    background: #10c9c3;
+
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 3;
+}
+
+.skill-container li.ani-1::after {
+    animation-name: ani-1;
+}
+
+@keyframes ani-1 {
+    to {
+        width: 75%;
+    }
+}
+
+.skill-container li.ani-2::after {
+    animation-name: ani-2;
+}
+
+@keyframes ani-2 {
+    to {
+        width: 90%;
+    }
+}
+
+.skill-container li.ani-3::after {
+    animation-name: ani-3;
+}
+
+@keyframes ani-3 {
+    to {
+        width: 65%;
+    }
+}
+
+/* ================================================================================================================== */
+/* ================================================================================================================== */
+/* ================================================================================================================== */
+/* ================================================================================================================== */
+/* ================================================================================================================== */
+
+/* success section */
+.success-section {
+    background: #10c9c3;
+    display: flex;
+    justify-content: space-between;
+    margin: 7rem 0;
+    min-height: 25rem;
+    margin-bottom: 0;
+}
+
+.card-container {
+    flex: 50%;
+    display: flex;
+}
+
+.card-container > div {
+    flex: 50%;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+}
+
+.card-head {
+    flex: 20%;
+}
+
+.card-head img {
+    width: 4rem;
+}
+
+.card-body {
+    flex: 70%;
+}
+
+.card-body p {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: white;
+    line-height: 1;
+}
+
+/* gallary section */
+.gallary-section {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    background: #f5f5f5;
+}
+
+.gal-body {
+    display: flex;
+}
+
+.gal-body > div {
+    display: flex;
+}
+
+.gallary-section p {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 5rem;
+    cursor: pointer;
+}
+
+/* ----------------------------*******************************************---------------------- */
+/* ----------------------------*******************************************---------------------- */
+/* ----------------------------*******************************************---------------------- */
+/* ----------------------------*******************************************---------------------- */
+/* ----------------------------*******************************************---------------------- */
+
+.eye-1 {
+    background: linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 0.1),
+            rgba(0, 0, 0, 0.1)
+        ),
+        url("../images/c-1.png");
+    width: 34.1rem;
+    max-width: 100%;
+    height: 30rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.eye-1:hover {
+    opacity: 1;
+    background: linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 0.7),
+            rgba(0, 0, 0, 0.7)
+        ),
+        url("../images/c-1.png");
+    cursor: pointer;
+}
+
+.eye-2 {
+    background: linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 0.1),
+            rgba(0, 0, 0, 0.1)
+        ),
+        url("../images/c-2.png");
+    width: 34.1rem;
+    max-width: 100%;
+    height: 30rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.eye-2:hover {
+    opacity: 1;
+    background: linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 0.7),
+            rgba(0, 0, 0, 0.7)
+        ),
+        url("../images/c-2.png");
+    cursor: pointer;
+}
+
+.eye-3 {
+    background: linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 0.1),
+            rgba(0, 0, 0, 0.1)
+        ),
+        url("../images/c-3.png");
+    width: 34.1rem;
+    max-width: 100%;
+    height: 30rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.eye-3:hover {
+    opacity: 1;
+    background: linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 0.7),
+            rgba(0, 0, 0, 0.7)
+        ),
+        url("../images/c-3.png");
+    cursor: pointer;
+}
+
+.eye-4 {
+    background: linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 0.1),
+            rgba(0, 0, 0, 0.1)
+        ),
+        url("../images/c-4.png");
+    width: 34.1rem;
+    max-width: 100%;
+    height: 30rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.eye-4:hover {
+    opacity: 1;
+    background: linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 0.7),
+            rgba(0, 0, 0, 0.7)
+        ),
+        url("../images/c-4.png");
+    cursor: pointer;
+}
+
+.eye-5 {
+    background: linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 0.1),
+            rgba(0, 0, 0, 0.1)
+        ),
+        url("../images/c-5.png");
+    width: 34.1rem;
+    max-width: 100%;
+    height: 30rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.eye-5:hover {
+    opacity: 1;
+    background: linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 0.7),
+            rgba(0, 0, 0, 0.7)
+        ),
+        url("../images/c-5.png");
+    cursor: pointer;
+}
+
+.eye-6 {
+    background: linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 0.1),
+            rgba(0, 0, 0, 0.1)
+        ),
+        url("../images/c-6.png");
+    width: 34.1rem;
+    max-width: 100%;
+    height: 30rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.eye-6:hover {
+    opacity: 1;
+    background: linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 0.7),
+            rgba(0, 0, 0, 0.7)
+        ),
+        url("../images/c-6.png");
+    cursor: pointer;
+}
+
+.eye-7 {
+    background: linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 0.1),
+            rgba(0, 0, 0, 0.1)
+        ),
+        url("../images/c-7.png");
+    width: 34.1rem;
+    max-width: 100%;
+    height: 30rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.eye-7:hover {
+    opacity: 1;
+    background: linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 0.7),
+            rgba(0, 0, 0, 0.7)
+        ),
+        url("../images/c-7.png");
+    cursor: pointer;
+}
+
+.eye-8 {
+    background: linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 0.1),
+            rgba(0, 0, 0, 0.1)
+        ),
+        url("../images/c-8.png");
+    width: 34.1rem;
+    max-width: 100%;
+    height: 30rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.eye-8:hover {
+    opacity: 1;
+    background: linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 0.7),
+            rgba(0, 0, 0, 0.7)
+        ),
+        url("../images/c-8.png");
+    cursor: pointer;
+}
+
+.eye-9 {
+    background: linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 0.1),
+            rgba(0, 0, 0, 0.1)
+        ),
+        url("../images/c-9.png");
+    width: 34.1rem;
+    max-width: 100%;
+    height: 30rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.eye-9:hover {
+    opacity: 1;
+    background: linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 0.7),
+            rgba(0, 0, 0, 0.7)
+        ),
+        url("../images/c-9.png");
+    cursor: pointer;
+}
+
+.eye-10 {
+    background: linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 0.1),
+            rgba(0, 0, 0, 0.1)
+        ),
+        url("../images/c-10.png");
+    width: 34.1rem;
+    max-width: 100%;
+    height: 30rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.eye-10:hover {
+    opacity: 1;
+    background: linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 0.7),
+            rgba(0, 0, 0, 0.7)
+        ),
+        url("../images/c-10.png");
+    cursor: pointer;
+}
+
+.eye-11 {
+    background: linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 0.1),
+            rgba(0, 0, 0, 0.1)
+        ),
+        url("../images/c-11.png");
+    width: 34.1rem;
+    max-width: 100%;
+    height: 30rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.eye-11:hover {
+    opacity: 1;
+    background: linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 0.7),
+            rgba(0, 0, 0, 0.7)
+        ),
+        url("../images/c-11.png");
+    cursor: pointer;
+}
+
+.eye-12 {
+    background: linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 0.1),
+            rgba(0, 0, 0, 0.1)
+        ),
+        url("../images/c-12.png");
+    width: 34.1rem;
+    max-width: 100%;
+    height: 30rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.eye-12:hover {
+    opacity: 1;
+    background: linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 0.7),
+            rgba(0, 0, 0, 0.7)
+        ),
+        url("../images/c-12.png");
+    cursor: pointer;
+}
+/* **************************----------------------------------------------************************* */
+/* ----------------------------*******************************************---------------------- */
+/* ----------------------------*******************************************---------------------- */
+/* ----------------------------*******************************************---------------------- */
+/* ----------------------------*******************************************---------------------- */
+
+.eye-item img {
+    max-width: 7rem;
+}
+
+.eye-item {
+    display: none;
+}
+
+[class*="eye-"]:hover .eye-item {
+    display: block;
+}
+/* ===================================================== */
+/* ===================================================== */
+/* ===================================================== */
+
+/* work process */
+.work-process {
+    display: flex;
+    flex-direction: column;
+    margin: 7rem auto;
+}
+
+.work-process div:nth-child(1) {
+    max-width: 50%;
+    margin: 5rem auto;
+    text-align: center;
+}
+
+.work-process div:nth-child(2) {
+    position: relative;
+}
+
+.work-process div:nth-child(2) > div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.work-process img {
+    max-width: 85%;
+    display: block;
+    margin: auto;
+}
+
+.work-process div:nth-child(2) > div img:hover {
+    cursor: pointer;
+}
+
+/* course section */
+.course-section {
+    margin: 7rem auto;
+}
+
+.course-sec-container {
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+}
+
+.course-sec-container .card {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem 1.5rem;
+    margin: 0.5rem;
+    max-width: 27rem;
+    min-height: 20rem;
+    transition: all ease-in-out 0.5s;
+}
+
+.course-sec-container .card:hover {
+    box-shadow: 0rem 0rem 0.5rem 0.1rem #787878;
+    cursor: pointer;
+    border-radius: 0.6rem;
+}
+
+.course-sec-container .card-head img {
+    width: 3rem;
+}
+
+.course-sec-container .card-body h3 {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    margin: 1.5rem 0;
+    font-weight: bold;
+}
+
+.course-sec-container .card-body p {
+    color: #787878;
+    font-size: 1.5rem;
+    line-height: 1.7;
+}
+
+/* review section */
+.review {
+    background: #10c9c3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 40rem;
+}
+
+.review p {
+    max-width: 40%;
+    text-align: center;
+    color: white;
+}
+
+.review p:nth-child(2) {
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    margin-bottom: 12rem;
+}
+
+/* brand section */
+.brand {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 7rem auto;
+}
+
+.brand div {
+    flex: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* contact section */
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.contact > div:nth-child(1) {
+    max-width: 57rem;
+    margin-bottom: 3rem;
+}
+
+.contact > div:nth-child(2) button {
+    min-width: 17rem;
+    margin-top: 3rem;
+}
+
+form > div:nth-child(1) {
+    display: flex;
+}
+
+form > div:nth-child(1) > div:not(:last-child) {
+    margin-right: 3rem;
+}
+
+input,
+textarea {
+    background: #e9e9e9d0;
+}
+
+input {
+    min-width: 35rem;
+    min-height: 5rem;
+    font-size: 1.5rem;
+    line-height: 1.2;
+    padding: 1rem;
+}
+
+#title,
+#comment {
+    min-width: 73rem;
+    margin-top: 1.5rem;
+    resize: none;
+    padding: 1rem;
+    letter-spacing: 0.1rem;
+}
+
+main::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+/* main section ends here */
+
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+
+/* footer section starts here */
+
+footer {
+    width: 100%;
+    padding: 5%;
+    background: #141414;
+    display: flex;
+    margin-top: 5rem;
+}
+
+footer > section {
+    flex: 30%;
+}
+
+footer ul li {
+    line-height: 2;
+}
+
+footer > section:nth-child(1) h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    max-width: 20rem;
+    color: white;
+}
+
+footer > section:nth-child(1) p {
+    font-size: 1.1rem;
+    max-width: 20rem;
+    color: #bcbcbc;
+}
+
+footer > section:nth-child(2) {
+    margin: 0 3rem;
+}
+
+footer a {
+    font-size: 1.2rem;
+    color: #bcbcbc;
+    transition: color ease-in-out 0.5s;
+}
+
+footer a:hover {
+    color: tomato;
+}
+
+footer > section:nth-child(3) {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer > section:nth-child(3) > div:nth-child(1) {
+    flex: 60%;
+    display: flex;
+}
+
+footer > section:nth-child(3) > div:nth-child(1) > div:nth-child(1) {
+    flex: 30%;
+}
+
+footer > section:nth-child(3) > div:nth-child(1) > div:nth-child(2) {
+    flex: 60%;
+}
+
+footer > section:nth-child(3) > div:nth-child(2) {
+    flex: 30%;
+}
+
+footer::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+/* footer section ends here */
